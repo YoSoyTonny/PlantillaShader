@@ -73,6 +73,14 @@ glUseProgram(shaderID);
 
 }
 
+void shader::enlazar() {
+	glUseProgram(shaderID);
+}
+
+void shader::desenlazar() {
+	glUseProgram(0);
+}
+
 void shader::verificarCompilacion(GLuint id) {
 	GLint resultado = GL_FALSE;
 	GLint longitudLog = 0;
